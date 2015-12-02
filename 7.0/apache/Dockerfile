@@ -45,7 +45,7 @@ RUN buildDeps=" \
 	&& curl -SL "https://github.com/php/php-src/archive/php-$PHP_VERSION.tar.gz" -o php.tar.gz \
 	&& mkdir -p /usr/src/php \
 	# && tar -xof php.tar.xz -C /usr/src/php --strip-components=1 \
-	&& tar -zxvf php.tar.gz -C /usr/src/php --strip-components=1 \
+	&& tar -zxf php.tar.gz -C /usr/src/php --strip-components=1 \
 	# && rm php.tar.xz* \
 	&& rm php.tar.gz* \
 	&& cd /usr/src/php \
